@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             builder.show();
 
         }else {
-            finish();
+            setContentView(R.layout.activity_main);
         }
 
     }
