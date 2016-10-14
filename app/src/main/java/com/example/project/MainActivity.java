@@ -29,8 +29,13 @@ public class MainActivity extends AppCompatActivity {
             builder.show();
 
         }else {
-            setContentView(R.layout.activity_main);
+
+            Intent Sub = new Intent(MainActivity.this, SubActivity.class);
+            startActivity(Sub);
+            MainActivity.this.finish(); //
+
         }
 
     }
+
 }
